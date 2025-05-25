@@ -1,0 +1,57 @@
+2021-05-26 21:46:40,261 [main] INFO java.lang.Class - Browser Opened
+2021-05-26 21:46:40,419 [main] INFO java.lang.Class - Implicit wait given
+2021-05-26 21:46:45,285 [main] INFO java.lang.Class - Url opened
+2021-05-26 21:46:45,771 [main] INFO java.lang.Class - keyword type
+2021-05-29 16:19:55,706 [main] INFO java.lang.Class - Msg1
+2021-05-29 16:19:55,725 [main] INFO java.lang.Class - Msg1
+2021-05-29 16:19:55,726 [main] INFO java.lang.Class - Msg1
+2021-05-29 16:19:55,726 [main] INFO java.lang.Class - Msg1
+2021-05-29 16:19:55,726 [main] INFO java.lang.Class - Msg1
+2021-05-29 16:19:55,726 [main] INFO java.lang.Class - Msg1
+2021-05-29 16:19:55,726 [main] INFO java.lang.Class - Msg1
+2021-05-29 16:19:55,727 [main] INFO java.lang.Class - Msg1
+2021-05-29 16:22:15,125 [main] INFO java.lang.Class - Browser Opened
+2021-05-29 16:22:15,258 [main] INFO java.lang.Class - Implicit wait given
+2021-05-29 16:22:18,901 [main] INFO java.lang.Class - Url opened
+2021-05-29 16:22:19,753 [main] INFO java.lang.Class - keyword type
+2021-05-29 16:24:51,831 [main] INFO TTClass2 - Browser Opened
+2021-05-29 16:24:52,000 [main] INFO TTClass2 - Implicit wait given
+2021-05-29 16:24:55,397 [main] INFO TTClass2 - Url opened
+2021-05-29 16:24:55,901 [main] INFO TTClass2 - keyword type
+2021-05-29 16:33:14,027 [main] INFO TTClass2 - Browser Opened
+2021-05-29 16:33:14,318 [main] INFO TTClass2 - Implicit wait given
+2021-05-29 16:33:18,139 [main] INFO TTClass2 - Url opened
+2021-05-29 16:33:19,035 [main] INFO TTClass2 - keyword type
+2021-05-29 16:34:34,223 [main] INFO TTClass2 - Browser Opened
+2021-05-29 16:34:34,231 [main] INFO TTClass2 - Implicit wait given
+2021-05-29 16:34:51,269 [main] INFO TTClass2 - Browser Opened
+2021-05-29 16:34:51,279 [main] INFO TTClass2 - Implicit wait given
+2021-05-29 16:34:58,938 [main] INFO TTClass2 - Url opened
+2021-05-29 16:34:59,040 [main] INFO TTClass2 - keyword type
+2021-06-01 20:28:09,603 [main] INFO TTClass2 - Browser Opened
+2021-06-01 20:28:09,642 [main] INFO TTClass2 - Implicit wait given
+2021-06-01 20:28:11,769 [main] INFO TTClass2 - Url opened
+2021-06-01 20:30:25,229 [main] INFO TTClass2 - Browser Opened
+2021-06-01 20:30:25,422 [main] INFO TTClass2 - Implicit wait given
+2021-06-01 20:30:28,651 [main] INFO TTClass2 - Url opened
+2021-06-01 20:35:38,043 [main] INFO TTClass2 - Browser Opened
+2021-06-01 20:35:38,055 [main] INFO TTClass2 - Implicit wait given
+2021-06-01 20:35:42,774 [main] INFO TTClass2 - Url opened
+2021-06-01 20:37:24,410 [main] INFO TTClass2 - Browser Opened
+2021-06-01 20:44:21,715 [main] INFO TTClass2 - Browser Opened
+2021-06-01 20:44:21,789 [main] INFO TTClass2 - Implicit wait given
+2021-06-01 20:44:57,408 [main] INFO TTClass2 - Browser Opened
+2021-06-01 20:44:57,635 [main] INFO TTClass2 - Implicit wait given
+2021-06-07 22:55:27,515 [main] INFO TTClass2 - Browser Opened
+2021-06-07 22:55:27,968 [main] INFO TTClass2 - Implicit wait given
+2021-12-28 12:08:18,082 [main] INFO Log4j - Browser Opened
+2021-12-28 12:08:18,268 [main] INFO Log4j - Implicit wait given
+2021-12-28 12:09:56,693 [main] INFO Log4j - Browser Opened
+2021-12-28 12:09:56,715 [main] INFO Log4j - Implicit wait given
+2021-12-28 12:12:47,557 [main] INFO Log4j - Browser Opened
+2021-12-28 12:12:51,400 [main] INFO Log4j - Url opened
+2021-12-28 12:12:51,434 [main] INFO Log4j - Implicit wait given
+2021-12-28 12:13:57,745 [main] INFO Log4j - Browser Opened
+2021-12-28 12:14:03,089 [main] INFO Log4j - Url opened
+2021-12-28 12:14:03,174 [main] INFO Log4j - Implicit wait given
+2021-12-28 12:14:03,650 [main] INFO Log4j - keyword type
