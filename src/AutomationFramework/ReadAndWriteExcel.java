@@ -17,7 +17,7 @@ import org.testng.Assert;
 
 public class ReadAndWriteExcel {
   
-	static String Path = "C:\\Users\\Dell\\Desktop\\Study Material\\Eclipse workspace\\Selenium\\src\\TestData";
+	static String Path = "C:\\Users\\Dell\\Desktop\\Study Material\\Eclipse workspace\\Selenium\\src\\TestData\\TestData.xlsx";
 	public static void main(String[]args) throws IOException {
 	
 	  
@@ -50,7 +50,7 @@ public class ReadAndWriteExcel {
 		  System.out.println();
 	  }
 	  
-	  ExcelWBook.close();
+//	  ExcelWBook.close();-- If you close the workbook here, you cannot write to it later.
 	  
 	  
 	  WebDriver driver = new ChromeDriver();
@@ -65,6 +65,7 @@ public class ReadAndWriteExcel {
      //Write data into excel 
       if(ActualTitle.equalsIgnoreCase(ExpectedTitle)) {
     	  int col1=ExcelWSheet.getRow(1).getLastCellNum();
+    	  System.out.println("Last cell number is "+col1);
     	  XSSFCell cell= ExcelWSheet.getRow(1).createCell(col1);
     	
     	  cell.setCellValue("Pass");
@@ -72,6 +73,7 @@ public class ReadAndWriteExcel {
       }
       else {
     	  int col2=ExcelWSheet.getRow(1).getLastCellNum();
+    	  System.out.println("Last cell number is "+col2);
     	  XSSFCell cell= ExcelWSheet.getRow(1).createCell(col2);
     	  cell.setCellValue("Fail");
     	  System.out.println("Test case is failed");

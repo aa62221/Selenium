@@ -31,9 +31,9 @@ public class SSLCertAndHeadlessBrowser {
 
 	}
 	
-	//Advantages:- 
+	//Advantages of Headless testing:- 
 	//Faster execution compared to GUI, as it does not wait for images to be rendered or element to be present in the screen
-   // Helps you to do the multi task while the test are running in backgroud.
+   // Helps you to do the multi task while the test are running in background.
 	
 	//Disadvantages:-
 	//Debugging is not feasible, as the only way to check what's running on the browser is to grab the screenshots and validate the output.

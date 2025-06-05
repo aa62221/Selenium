@@ -2,6 +2,7 @@ package TipsandTricks;
 
 import java.io.File;
 import java.net.HttpURLConnection;
+import java.net.URI;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -49,8 +50,11 @@ public class BrokenLinks {
     {
         try
         {
-            URL url = new URL(linkUrl);
- 
+//            URL url = new URL(linkUrl);---This is deprecated, hence using URI class to create URL object.
+            URI uri = URI.create(linkUrl);
+
+            // Convert URI to URL
+            URL url = uri.toURL();
             //Now we will be creating url connection and getting the response code
             //we will check the HTTP status of each using HttpURLConnection class in Java.
             HttpURLConnection httpURLConnect=(HttpURLConnection)url.openConnection();
@@ -61,7 +65,7 @@ public class BrokenLinks {
             //We will fetch the response code and print OK if the URL works fine. Else will give an error.
             if(httpURLConnect.getResponseCode()>=400)
             {
-             System.out.println(linkUrl+" - "+httpURLConnect.getResponseMessage()+"is a broken link");
+             System.out.println(linkUrl+" - "+httpURLConnect.getResponseMessage()+" is a broken link");
             }    
        
             //Fetching and Printing the response code obtained

@@ -20,7 +20,7 @@ import org.testng.Assert;
 
 public class ReadExcelUsingColumnValues {
   
-	static String Path = "E:\\\\Eclipse workspace\\\\Selenium\\\\src\\\\TestData\\\\TestData.xlsx";
+	static String Path = "C:\\Users\\Dell\\Desktop\\Study Material\\Eclipse workspace\\Selenium\\src\\TestData\\TestData.xlsx";
 	public static void main(String[]args) throws IOException {
 	
 	   
@@ -29,6 +29,7 @@ public class ReadExcelUsingColumnValues {
 		  XSSFSheet ExcelWSheet = ExcelWBook.getSheetAt(0);
 		  
 		  int row= ExcelWSheet.getPhysicalNumberOfRows();
+		  System.out.println("Total number of rows in the excel using getPhysicalNumberOfRows:" +row);
 		  int col =ExcelWSheet.getRow(0).getLastCellNum();
 		  
 		  			 

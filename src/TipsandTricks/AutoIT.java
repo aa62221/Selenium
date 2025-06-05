@@ -32,18 +32,28 @@ public class AutoIT {
 //     String s =Keys.chord(Keys.SHIFT+"A");
 //     action.sendKeys(s);
  
-    		
+    	//Below method is deprecated in Selenium 4.0.0 and above	
+//     try {
+//		Runtime.getRuntime().exec("C:\\Users\\dell\\Desktop\\AutoITFile");
+//	} catch (IOException e) {
+//		// TODO Auto-generated catch block
+//		e.printStackTrace();
+//	}
+     
      try {
-		Runtime.getRuntime().exec("C:\\Users\\dell\\Desktop\\AutoITFile");
-	} catch (IOException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
+         // Use ProcessBuilder to execute the AutoIT script
+         ProcessBuilder processBuilder = new ProcessBuilder("C:\\Users\\dell\\Desktop\\AutoITFile.exe");
+         processBuilder.start();
+         System.out.println("AutoIT script executed successfully.");
+     } catch (IOException e) {
+         e.printStackTrace();
+         System.err.println("Error executing AutoIT script: " + e.getMessage());
+     }
      
      
    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));  // 10-second timeout
    wait.ignoring(ElementNotInteractableException.class).until(ExpectedConditions.visibilityOfElementLocated(By.id("elementID")));
-     
+    
    
    //Key Difference between WebDriverWait and FluentWait is 
    //🕒 Polling Frequency	Default: 500 milliseconds(WebDriverWait)	You can customize it (e.g., 2 sec)(FluentWait)
