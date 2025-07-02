@@ -20,7 +20,6 @@ public class BrokenLinks {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.amazon.com/");
- 
         //Storing the links in a list and traversing through the links
         List<WebElement> links = driver.findElements(By.tagName("a"));
  

@@ -27,10 +27,11 @@ public class AutoIT {
      driver.findElement(By.cssSelector("input#uploadPicture.form-control-file")).click();
      
      
-//     Actions action = new Actions(driver);
-//     action.sendKeys(Keys.SHIFT,"Test");
-//     String s =Keys.chord(Keys.SHIFT+"A");
-//     action.sendKeys(s);
+     Actions action = new Actions(driver);
+     action.sendKeys(Keys.SHIFT,"Test");
+     String s =Keys.chord(Keys.SHIFT+"A");
+     action.sendKeys(s);
+     
  
     	//Below method is deprecated in Selenium 4.0.0 and above	
 //     try {
