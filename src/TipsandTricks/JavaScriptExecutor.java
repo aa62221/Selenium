@@ -62,6 +62,15 @@ public class JavaScriptExecutor {
 					System.out.println("Assertion caught");
 				}
 			
+//			<custom-component>
+//			  #shadow-root
+//			    <input id="shadowInput" type="text">
+//			</custom-component>
+
+			//to handle shadow DOM elements
+//	         WebElement shadowHost = driver.findElement(By.cssSelector("custom-component"));
+//			 WebElement shadowRoot = (WebElement) js.executeScript("return arguments[0].shadowRoot", shadowHost);
+			
 		     
 	}
 		
