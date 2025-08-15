@@ -35,8 +35,8 @@ public class BrokenLinks {
         }
         System.out.println("No of urls are "+ urlList.size());  
         //We can use below method to run the url in parallel to save time in case there are many links.
-//        urlList.parallelStream().forEach(e -> verifyLinks(e));//------ This will work same as below but below code is more readable and easy to understand.
-          urlList.parallelStream().forEach(BrokenLinks::verifyLinks);
+          urlList.parallelStream().forEach(e -> verifyLinks(e));//------ This will work same as below but below code is more readable and easy to understand.
+//          urlList.parallelStream().forEach(BrokenLinks::verifyLinks);
          
         
         driver.quit();
