@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.time.Duration;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -14,7 +15,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class ReadAndWriteExcel {
   
-	static String Path = "C:\\Users\\Dell\\Desktop\\Study Material\\Eclipse workspace\\Selenium\\src\\TestData\\TestData.xlsx";
+	static String Path = "C:\\Users\\Dell\\Automation Setup\\NashaMuktaKendra.xlsx";
 	public static void main(String[]args) throws IOException {
 	
 	  
@@ -41,7 +42,15 @@ public class ReadAndWriteExcel {
 		  for(int j=0; j<col;j++) {
 			
 					 XSSFCell cell= ExcelWSheet.getRow(i).getCell(j);
+					 CellType type =  cell.getCellType();
+					 					 
+					 if(type.equals(CellType.STRING)) {
 					 System.out.print(cell.getStringCellValue()+"                 ");
+					 }
+						else if (type.equals(CellType.NUMERIC)) {
+							System.out.print(String.valueOf((int)cell.getNumericCellValue()) + "                 ");
+							
+						} 
 					 
 		  }		  
 		  System.out.println();

@@ -20,7 +20,7 @@ import org.testng.Assert;
 
 public class ReadExcelUsingColumnValues {
   
-	static String Path = "C:\\Users\\Dell\\Desktop\\Study Material\\Eclipse workspace\\Selenium\\src\\TestData\\TestData.xlsx";
+	static String Path = "C:\\Users\\Dell\\Desktop\\Study Material\\EclipseWorkspace\\Selenium\\src\\TestData\\TestData.xlsx";;
 	public static void main(String[]args) throws IOException {
 	
 	   
