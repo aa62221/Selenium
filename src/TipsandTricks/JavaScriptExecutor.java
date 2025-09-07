@@ -70,7 +70,8 @@ public class JavaScriptExecutor {
 			//to handle shadow DOM elements
 //	         WebElement shadowHost = driver.findElement(By.cssSelector("custom-component"));
 //			 WebElement shadowRoot = (WebElement) js.executeScript("return arguments[0].shadowRoot", shadowHost);
-			
+//			 WebElement shadowInput = shadowRoot.findElement(By.cssSelector("#shadowInput"));
+//	         shadowInput.sendKeys("Hello Shadow DOM");
 		     
 	}
 		
