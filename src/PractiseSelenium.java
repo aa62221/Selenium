@@ -18,7 +18,7 @@ public class PractiseSelenium {
 	     driver.manage().window().maximize();
 	     driver.get("https://demoqa.com/automation-practice-form");
 	     WebElement ele=  driver.findElement(By.xpath("//input[@id='firstName']"));
-	     ele.sendKeys(Keys.SHIFT,"Akshay","Athale");
+	     ele.sendKeys(Keys.SHIFT,"Akshay",Keys.SPACE, "Athale");
 	     
 	     
 	     Actions action = new Actions(driver);

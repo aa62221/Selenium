@@ -39,7 +39,7 @@ public class NewTest {
 //	   }
 	
 	
-	//If there are multiple parameters then you will have to use curly braces otherwise for one parameter
+	 //If there are multiple parameters then you will have to use curly braces otherwise for one parameter
 	  //you can directly write under closed brackets ().
 	  @Test
 	  @Parameters ("Message1")

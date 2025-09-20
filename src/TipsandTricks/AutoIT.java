@@ -26,7 +26,6 @@ public class AutoIT {
      driver.get("https://demoqa.com/automation-practice-form");
      driver.findElement(By.cssSelector("input#uploadPicture.form-control-file")).click();
      
-     
      Actions action = new Actions(driver);
      action.sendKeys(Keys.SHIFT,"Test");
      String s =Keys.chord(Keys.SHIFT+"A");
