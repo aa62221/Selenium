@@ -22,7 +22,7 @@ import org.testng.annotations.Test;
 public class NashaMuktaKendra {
 	
 
-	 @Test(dataProvider= "Parameters")
+	@Test(dataProvider= "Parameters")
     public void nashaMuktBharat(String Name, String Age, String State, String District, String Mobile, String Email) throws InterruptedException, IOException {
 //        WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
