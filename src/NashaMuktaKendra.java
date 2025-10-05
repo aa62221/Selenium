@@ -2,6 +2,7 @@
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.List;
 
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFRow;
@@ -31,6 +32,12 @@ public class NashaMuktaKendra {
         driver.manage().window().maximize();
         driver.get("https://nmba.dosje.gov.in/content/take-a-pledge");
         WebDriverWait wait = new WebDriverWait(driver, java.time.Duration.ofSeconds(10));
+        
+        List<WebElement> links = driver.findElements(By.tagName("a"));
+        for(int i=0; i<links.size(); i++) {
+        	
+        	System.out.println(links.get(i).getText()+"---URL: ----"+links.get(i).getAttribute("href"));
+        }
         
         WebElement pledgeLabel= driver.findElement(By.xpath("//div[@class='modal-content']//label[text()='I take a pledge.']"));   
         wait.until(
@@ -141,6 +148,9 @@ public class NashaMuktaKendra {
 	     fis.close();
 	     return data;
 	 }
+	 
+	 
+	 
 
 
 
